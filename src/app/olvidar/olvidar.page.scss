@@ -3,7 +3,6 @@
 ion-content {
     --background: linear-gradient(135deg, #6a1b9a, #000000); 
   }
-  
 @keyframes zoomInOut {
     0% {
       transform: scale(1);
@@ -15,14 +14,10 @@ ion-content {
       transform: scale(1);
     }
   }
-  
-  /* Aplica la animación de zoom in y out a la clase */
   .zoom-in-out-animation {
     animation: zoomInOut 3s infinite;
   }
-  
-  /* Ajusta el contenedor de bienvenida */
-  .welcome-container {
+  .bienvenido {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,11 +26,9 @@ ion-content {
     text-align: center;
     padding: 20px;
   }
-  
-  /* Ajusta la imagen animada */
   .animated-image {
-    width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 300px; 
     height: auto;
-    margin-bottom: 20px; /* Ajusta según el espacio necesario */
+    margin-bottom: 20px; 
   }
   

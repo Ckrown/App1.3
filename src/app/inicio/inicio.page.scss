@@ -11,15 +11,12 @@ ion-content {
     text-align: center;
     padding: 5px;
   }
-  
-
   .animated-image {
     width: 2000px;
     height: auto;
     margin-bottom: 10px; 
     animation: bounce 2s infinite;
   }
-  
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
@@ -31,11 +28,9 @@ ion-content {
       transform: translateY(-15px);
     }
   }
-  
   ion-menu::part(backdrop) {
     background-color: rgba(255, 0, 255, 0.5);
   }
-  
   ion-menu::part(container) {
     border-radius: 0 20px 20px 0;
   

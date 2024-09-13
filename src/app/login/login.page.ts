@@ -41,12 +41,10 @@ export class LoginPage implements OnInit {
       if (usuario.nombre === f.nombre && usuario.password === f.password) {
 
         this.isLoading = true;
-
-        // Crear y presentar el spinner
         const loading = await this.loadingController.create({
           message: 'Iniciando sesión...',
-          spinner: 'crescent', // Tipo de spinner
-          duration: 2000 // Duración opcional en ms
+          spinner: 'crescent', 
+          duration: 2000 
         });
 
         await loading.present();
