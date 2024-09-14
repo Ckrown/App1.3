@@ -18,7 +18,7 @@
       <ion-card-content>
         <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
           <ion-item>
-            <ion-label position="floating">Nombre</ion-label>
+            <ion-label position="floating">Nombre Usuario</ion-label>
             <ion-input formControlName="nombre"></ion-input>
           </ion-item>
           <div *ngIf="formularioRegistro.get('nombre')?.errors?.['minlength'] && formularioRegistro.get('nombre')?.touched" class="error-message">
@@ -35,7 +35,7 @@
 
           <ion-item>
             <ion-label position="floating">Teléfono</ion-label>
-            <ion-input formControlName="telefono" type="tel"></ion-input>
+            <ion-input formControlName="telefono" type="number"></ion-input>
           </ion-item>
           <div *ngIf="formularioRegistro.get('telefono')?.errors?.['pattern'] && formularioRegistro.get('telefono')?.touched" class="error-message">
             El teléfono debe tener 9 dígitos.

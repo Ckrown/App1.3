@@ -32,3 +32,25 @@ ion-content {
     margin-bottom: 20px; 
   }
   
+  .confirmation {
+    text-align: center;
+    padding: 20px;
+  }
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto;
+}

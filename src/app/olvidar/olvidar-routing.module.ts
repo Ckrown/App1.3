@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
+import { RouterModule, Routes } from '@angular/router';
 import { OlvidarPage } from './olvidar.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: OlvidarPage
-  }
+  { path: 'olvidar', component: OlvidarPage },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  // Otras rutas
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class OlvidarPageRoutingModule {}
+export class AppRoutingModule { }

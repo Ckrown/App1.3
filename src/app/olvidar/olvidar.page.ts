@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-olvidar',
   templateUrl: './olvidar.page.html',
   styleUrls: ['./olvidar.page.scss'],
 })
-export class OlvidarPage implements OnInit {
+export class OlvidarPage {
+  name: string = '';
+  submitted: boolean = false;
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  onSubmit() {
+    this.submitted = true;
   }
-
 }
