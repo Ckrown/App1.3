@@ -23,7 +23,11 @@ const routes: Routes = [
   {
     path: 'olvidar',
     loadChildren: () => import('./olvidar/olvidar.module').then( m => m.OlvidarPageModule)
+  },  {
+    path: 'olvidar',
+    loadChildren: () => import('./olvidar/olvidar.module').then( m => m.OlvidarPageModule)
   },
+
 ];
 
 @NgModule({
